@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:host</title>
+</head>  
+<body>
+    <h2 class="title">Subtitle</h2>
+    <my-element>
+        <span slot='title'>Slot title 1 😄</span>
+        <span slot='paragraph'>I am text outside the component 😈</span>
+    </my-element>
+    
+    <my-element class='blue'>
+        <span slot='title'>Slot title 2 😄</span>
+        <span slot='paragraph'>I am text outside the component 😈</span>
+    </my-element>
+
+    <my-element yellow>
+        <span slot='title'>Slot title 3 😄</span>
+        <span slot='paragraph'>I am text outside the component 😈</span>
+    </my-element>
+
+    <article class="card">
+        <my-element yellow>
+            <span slot='title'>Slot title 4 😄</span>
+            <span slot='paragraph'>I am text outside the component 😈</span>
+        </my-element>
+    </article>
+    <script type="module" src="./my-element.js">
+    </script>
+</body>
+</html>
